@@ -5,6 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>www.dreaming.net/</title>
   <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  <style>
+    body {
+      overflow: scroll;
+      overflow-x: hidden;
+      height: 30em;
+      padding: 1rem;
+    }
+    #container {
+      width: 100%;
+    }
+    #float {
+      max-height: 800px;
+      position: fixed;
+      left: 1px;
+      bottom: 1px;
+      z-index: 200;
+    }
+    #header {
+      margin-top: 30px;
+    }
+    #navbar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color: #e0f7fa;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #navbar ul li {
+      margin: 0 10px;
+      display: inline-block;
+    }
+    #navbar ul li a {
+      color: #333;
+      text-decoration: none;
+      font-family: consolas, monospace;
+      font-size: 12px;
+      padding: 2px 8px;
+    }
+    #navbar ul li a:hover {
+      background-color: #ceebf2;
+      border-radius: 6px;
+    }
+    main {
+      margin: 2em 0;
+    }
+    .text {
+      font-family: consolas, monospace;
+      font-size: 1.4em;
+      color: #0097a7;
+    }
+    h1 {
+      font-family: consolas, monospace;
+      color: #00796b;
+    }
+    .gallery-images img {
+      margin: 7px;
+      vertical-align: middle;
+      border-radius: 8px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+      background: #f0f0f0;
+      padding: 2px;
+      transition: transform 0.2s;
+    }
+    .gallery-images img:hover {
+      transform: scale(1.04) rotate(-2deg);
+      box-shadow: 4px 4px 12px rgba(0,0,0,0.14);
+    }
+    footer#footer {
+      margin-top: 3em;
+      padding: 1em 0;
+      background: #e0f7fa;
+      border-top: 1px solid #b2dfdb;
+    }
+  </style>
 </head>
 <body>
   <div id="container">
