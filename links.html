@@ -6,15 +6,26 @@
   <title>www.dreaming.net/</title>
   <link href="style.css" rel="stylesheet" type="text/css" media="all">
   <!-- Add xp.css for button styling only -->
+    <link rel="stylesheet" href="https://unpkg.com/xp.css">
   <style>
-    /* Make anchor links look like xp.css buttons */
+    /* Scope xp.css styles only to .xp-btn and #links divider */
+    /* First, reset possible xp.css effects on other elements */
+    body, h1, h2, h3, h4, h5, h6, p, .text, ul, li, nav, marquee, main, footer, #header, #navbar, #container, #float {
+      all: unset;
+      /* Optionally, restore your custom styles here or rely on style.css */
+    }
+    /* Apply xp.css only on buttons with .xp-btn and the #links divider */
     .xp-btn {
-      /* Only use the xp.css button class */
-      /* xp.css uses .xp-btn and .button classes for buttons */
-      /* So we just apply .xp-btn to our anchors */
-      /* Remove any custom button styles here */
+      /* The .xp-btn class will inherit button styles from xp.css */
+    }
+    #links {
+      /* Apply divider style from xp.css if needed */
+      /* Or override/add your divider style here */
+      border-bottom: 2px solid #b5b5b5;
+      margin: 16px 0;
     }
     /* Remove previous custom button-link styles if present */
+    /* Remove double button tags in HTML below */
   </style>
 </head>
 <body>
