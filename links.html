@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>www.dreaming.net/</title>
   <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  <!-- Add xp.css for button styling only -->
+  <link rel="stylesheet" href="https://unpkg.com/xp.css">
+  <style>
+    /* Make anchor links look like xp.css buttons */
+    .xp-btn {
+      /* Only use the xp.css button class */
+      /* xp.css uses .xp-btn and .button classes for buttons */
+      /* So we just apply .xp-btn to our anchors */
+      /* Remove any custom button styles here */
+    }
+    /* Remove previous custom button-link styles if present */
+  </style>
 </head>
 <body>
   <div id="container">
@@ -15,13 +27,13 @@
     <div id="navbar">
       <nav>
         <ul>
-          <li><a href="https://www.tumblr.com/new/ask/www-myworld">Ask</a></li>
-          <li><a href="/diary.html">Diary</a></li>
-          <li><a href="/hoard.html">Hoard</a></li>
-          <li><a href="/stims.html">Gallery</a></li>
-          <li><a href="/links.html">Links</a></li>
-          <li><a href="/archive.html">Archives</a></li>
-          <li><a href="/real-life.html">IRL (password needed)</a></li>
+          <li><a class="xp-btn" href="https://www.tumblr.com/new/ask/www-myworld">Ask</a></li>
+          <li><a class="xp-btn" href="/diary.html">Diary</a></li>
+          <li><a class="xp-btn" href="/hoard.html">Hoard</a></li>
+          <li><a class="xp-btn" href="/stims.html">Gallery</a></li>
+          <li><a class="xp-btn" href="/links.html">Links</a></li>
+          <li><a class="xp-btn" href="/archive.html">Archives</a></li>
+          <li><a class="xp-btn" href="/real-life.html">IRL (password needed)</a></li>
         </ul>
       </nav>
     </div>
@@ -29,11 +41,11 @@
       <h1>Hoard</h1>
       <div class="links">
         <h1>Recourses</h1>
-        <a href="scripted.neocities.org">Scripted (for my floating character)</a>
+        <a class="xp-btn" href="scripted.neocities.org">Scripted</a>
         <br>
-        <a href="https://bettysgraphics.neocities.org/">Betty Graphics (for most of the graphics used)</a>
+        <a class="xp-btn" href="https://bettysgraphics.neocities.org/">Betty Graphics</a>
         <h1>My Socials</h1>
-        <a href="tiktok.com/a/@kaiberriezz_art">TikTok</a>
+        <a class="xp-btn" href="tiktok.com/a/@kaiberriezz_art">TikTok</a>
       </div> 
       <center>
         <a href="https://kaiberriezz.atabook.org">
